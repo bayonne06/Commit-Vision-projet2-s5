@@ -14,7 +14,7 @@ header a {
   flex-wrap: wrap;
   padding-inline: var(--sp-6);
   background-color: var(--color-surface);
-  height: 70px;
+  min-height: 70px;
   width: 100%;
   position: fixed;
   top: 0;
