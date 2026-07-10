@@ -1,167 +1,217 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Produit — L'Atelier des Sens</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/produit.css">
-</head>
-<body>
-
-<!-- ============ HEADER ============ -->
-<header class="site-header">
-  <div class="container">
-    <div class="logo">L'Atelier des Sens</div>
-    <nav class="main-nav" aria-label="Navigation principale">
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="catalogue.html">Catalogue</a></li>
-        <li><a href="#">Nos artisans</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="header-actions">
-      <button class="icon-btn" aria-label="Rechercher">🔍</button>
-      <button class="icon-btn" aria-label="Panier">🛍</button>
-      <button class="burger-btn" aria-expanded="false" aria-label="Ouvrir le menu">☰</button>
-    </div>
-  </div>
-</header>
-
-<main class="container">
-
-  
-  <nav class="breadcrumb" aria-label="Fil d'Ariane">
-    <a href="index.html">Accueil</a><span class="sep">/</span>
-    <a href="catalogue.html">Catalogue</a><span class="sep">/</span>
-    <a href="catalogue.html?cat=ceramique">Céramique</a><span class="sep">/</span>
-    <span class="current" aria-current="page">Bol Ondine</span>
-  </nav>
-
-  <!-- ============ FICHE PRODUIT ============ -->
-  <article class="product-detail">
-
-    <!-- Galerie en Grid -->
-    <div class="product-gallery">
-      <div class="gallery-main">
-        <img src="images/bol-ondine.jfif" alt="Bol Ondine en grès émaillé, vue de face sur fond clair" loading="lazy">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produit — L'Atelier des Sens</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/produit.css" />
+  </head>
+  <body>
+    <!-- ============ HEADER ============ -->
+    <header class="site-header">
+      <div class="container">
+        <div class="logo">L'Atelier des Sens</div>
+        <nav class="main-nav" aria-label="Navigation principale">
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="catalogue.html">Catalogue</a></li>
+            <li><a href="produit.html">Nos produit</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <button class="icon-btn" aria-label="Rechercher">🔍</button>
+          <button class="icon-btn" aria-label="Panier">🛍</button>
+          <button
+            class="burger-btn"
+            aria-expanded="false"
+            aria-label="Ouvrir le menu"
+          >
+            ☰
+          </button>
+        </div>
       </div>
-      <div class="gallery-thumbs">
-        <img src="images/bol-ondine.jfif" alt="Bol Ondine, vue de dessus" loading="lazy">
-        <img src="img/bol-gres-card.jpg" alt="Bol Ondine, détail de l'émail" loading="lazy">
-        <img src="img/bol-gres-hero-img.jpg" alt="Bol Ondine posé sur une table en bois" loading="lazy">
-        <img src="img/miel.jpg" alt="du miel naturel non filtré" loading="lazy">
+    </header>
+
+    <main class="container">
+      <nav class="breadcrumb" aria-label="Fil d'Ariane">
+        <a href="index.html">Accueil</a><span class="sep">/</span>
+        <a href="catalogue.html">Catalogue</a><span class="sep">/</span>
+        <a href="catalogue.html?cat=ceramique">Céramique</a
+        ><span class="sep">/</span>
+        <span class="current" aria-current="page">Bol Ondine</span>
+      </nav>
+
+      <!-- ============ FICHE PRODUIT ============ -->
+      <article class="product-detail">
+        <!-- Galerie en Grid -->
+        <div class="product-gallery">
+          <div class="gallery-main">
+            <img
+              src="images/bol-ondine.jfif"
+              alt="Bol Ondine en grès émaillé, vue de face sur fond clair"
+              loading="lazy"
+            />
+          </div>
+          <div class="gallery-thumbs">
+            <img
+              src="images/bol-ondine.jfif"
+              alt="Bol Ondine, vue de dessus"
+              loading="lazy"
+            />
+            <img
+              src="img/bol-gres-card.jpg"
+              alt="Bol Ondine, détail de l'émail"
+              loading="lazy"
+            />
+            <img
+              src="img/bol-gres-hero-img.jpg"
+              alt="Bol Ondine posé sur une table en bois"
+              loading="lazy"
+            />
+            <img
+              src="img/miel.jpg"
+              alt="du miel naturel non filtré"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <!-- Infos produit -->
+        <div class="product-info">
+          <p class="cat">Céramique — fait main</p>
+          <h1>Bol Ondine, grès émaillé</h1>
+          <p class="price">27 550 FCFA</p>
+          <p class="desc">
+            Tourné à la main dans l'atelier de MBOUNGOU Jean Pierre. Chaque
+            pièce est unique : les nuances de l'émail varient légèrement d'un
+            bol à l'autre.
+          </p>
+
+          <dl class="product-specs">
+            <dt>Diamètre</dt>
+            <dd>14 cm</dd>
+            <dt>Matière</dt>
+            <dd>Grès émaillé</dd>
+            <dt>Entretien</dt>
+            <dd>Passe au lave-vaisselle</dd>
+            <dt>Origine</dt>
+            <dd>Village Kipéni, R.Congo</dd>
+          </dl>
+
+          <div class="product-actions">
+            <div class="qty">
+              <button type="button" aria-label="Diminuer la quantité">-</button>
+              <span>1</span>
+              <button type="button" aria-label="Augmenter la quantité">
+                +
+              </button>
+            </div>
+            <a href="#" class="btn btn-primary">Ajouter au panier</a>
+          </div>
+
+          <a href="catalogue.html" class="btn btn-outline"
+            >← Retour au catalogue</a
+          >
+        </div>
+      </article>
+
+      <!-- ============ PRODUITS SIMILAIRES ============ -->
+      <section class="section">
+        <div class="section-head">
+          <h2>Vous aimerez aussi</h2>
+          <a href="catalogue.html">Voir tout →</a>
+        </div>
+        <div class="related-grid">
+          <article class="card">
+            <img
+              src="images/vase-anse.jpg"
+              alt="Vase Anse en grès"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <p class="cat">Céramique</p>
+              <h3>Vase Anse</h3>
+              <p class="price-tag">36 733 FCFA</p>
+            </div>
+          </article>
+          <article class="card">
+            <img
+              src="images/plaid-merinos.jfif"
+              alt="Plaid en laine mérinos plié"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <p class="cat">Textile</p>
+              <h3>Plaid mérinos</h3>
+              <p class="price-tag">51 164 FCFA</p>
+            </div>
+          </article>
+          <article class="card">
+            <img
+              src="images/miel-chataignier.png"
+              alt="Pot de miel de châtaignier"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <p class="cat">Épicerie</p>
+              <h3>Miel châtaignier</h3>
+              <p class="price-tag">5 903 FCFA</p>
+            </div>
+          </article>
+          <article class="card">
+            <img
+              src="images/planche-chene.jfif"
+              alt="Planche à découper en chêne massif"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <p class="cat">Bois</p>
+              <h3>Planche chêne</h3>
+              <p class="price-tag">22 302 FCFA</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="logo">L'Atelier des Sens</div>
+          <p>Artisanat et gourmandises locales, sélectionnés avec soin.</p>
+        </div>
+        <div>
+          <h4>Boutique</h4>
+          <ul>
+            <li>Catalogue</li>
+            <li>Nos artisans</li>
+            <li>Nouveautés</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Aide</h4>
+          <ul>
+            <li>Contact</li>
+            <li>Livraison</li>
+            <li>Retours</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Suivez-nous</h4>
+          <ul>
+            <li>Instagram</li>
+            <li>Facebook</li>
+          </ul>
+        </div>
       </div>
-    </div>
-
-    <!-- Infos produit -->
-    <div class="product-info">
-      <p class="cat">Céramique — fait main</p>
-      <h1>Bol Ondine, grès émaillé</h1>
-      <p class="price">27 550 FCFA</p>
-      <p class="desc">Tourné à la main dans l'atelier de MBOUNGOU Jean Pierre. 
-        Chaque pièce est unique : les nuances de l'émail varient légèrement d'un bol à l'autre.</p>
-
-      <dl class="product-specs">
-        <dt>Diamètre</dt><dd>14 cm</dd>
-        <dt>Matière</dt><dd>Grès émaillé</dd>
-        <dt>Entretien</dt><dd>Passe au lave-vaisselle</dd>
-        <dt>Origine</dt><dd>Village Kipéni, R.Congo</dd>
-      </dl>
-
-      <div class="product-actions">
-        <div class="qty">
-          <button type="button" aria-label="Diminuer la quantité">-</button>
-          <span>1</span>
-          <button type="button" aria-label="Augmenter la quantité">+</button>
-        </div>
-        <a href="#" class="btn btn-primary">Ajouter au panier</a>
-      </div>
-
-      <a href="catalogue.html" class="btn btn-outline">← Retour au catalogue</a>
-    </div>
-
-  </article>
-
-  <!-- ============ PRODUITS SIMILAIRES ============ -->
-  <section class="section">
-    <div class="section-head">
-      <h2>Vous aimerez aussi</h2>
-      <a href="catalogue.html">Voir tout →</a>
-    </div>
-    <div class="related-grid">
-      <article class="card">
-        <img src="images/vase-anse.jpg" alt="Vase Anse en grès" loading="lazy">
-        <div class="card-body">
-          <p class="cat">Céramique</p>
-          <h3>Vase Anse</h3>
-          <p class="price-tag">36 733 FCFA</p>
-        </div>
-      </article>
-      <article class="card">
-        <img src="images/plaid-merinos.jfif" alt="Plaid en laine mérinos plié" loading="lazy">
-        <div class="card-body">
-          <p class="cat">Textile</p>
-          <h3>Plaid mérinos</h3>
-          <p class="price-tag">51 164 FCFA</p>
-        </div>
-      </article>
-      <article class="card">
-        <img src="images/miel-chataignier.png" alt="Pot de miel de châtaignier" loading="lazy">
-        <div class="card-body">
-          <p class="cat">Épicerie</p>
-          <h3>Miel châtaignier</h3>
-          <p class="price-tag">5 903 FCFA</p>
-        </div>
-      </article>
-      <article class="card">
-        <img src="images/planche-chene.jfif" alt="Planche à découper en chêne massif" loading="lazy">
-        <div class="card-body">
-          <p class="cat">Bois</p>
-          <h3>Planche chêne</h3>
-          <p class="price-tag">22 302 FCFA</p>
-        </div>
-      </article>
-    </div>
-  </section>
-
-</main>
-
-<!-- ============ FOOTER ============ -->
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div>
-      <div class="logo">L'Atelier des Sens</div>
-      <p>Artisanat et gourmandises locales, sélectionnés avec soin.</p>
-    </div>
-    <div>
-      <h4>Boutique</h4>
-      <ul>
-        <li>Catalogue</li>
-        <li>Nos artisans</li>
-        <li>Nouveautés</li>
-      </ul>
-    </div>
-    <div>
-      <h4>Aide</h4>
-      <ul>
-        <li>Contact</li>
-        <li>Livraison</li>
-        <li>Retours</li>
-      </ul>
-    </div>
-    <div>
-      <h4>Suivez-nous</h4>
-      <ul>
-        <li>Instagram</li>
-        <li>Facebook</li>
-      </ul>
-    </div>
-  </div>
-</footer>
-
-</body>
+    </footer>
+  </body>
 </html>
