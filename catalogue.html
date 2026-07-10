@@ -1,114 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Catalogue</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="css/catalogue.css">
-</head>
-<body class="site">
-    <header class="site-header">
-        <div class="container">
-            <div class="logo">Commit Vision</div>
-
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="catalogue.html" aria-current="page" class="active">Catalogue</a></li>
-                    <li><a href="#">Nos Artisans</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-
-            <div class="header-actions">
-                <button class="icon-btn" aria-label="Rechercher un produit">
-                    <span aria-hidden="true">🔍</span>
-                </button>
-                 <button class="icon-btn" aria-label="Voir le panier">
-                    <span aria-hidden="true">🛍</span>
-                </button>
-            </div>
-        </div>
+    <link rel="stylesheet" href="css/catalogue.css" />
+    <link rel="stylesheet" href="css/header.css" />
+  </head>
+  <body class="site">
+    <!-- Début en tête de la page : Grasty Ghyvet SAMBA DINAULT -->
+    <header class="header-site">
+      <div class="logo">
+        <a href="index.html">L'Atelier de Sens</a>
+      </div>
+      <nav>
+        <ul class="nav-bar">
+          <li><a href="index.html">Acceuil</a></li>
+          <li><a href="catalogue.html">Catalogue</a></li>
+          <li><a href="produit.html">Nos artisans</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <div class="action-btn">🔍</div>
+        <div class="action-btn">🛍</div>
+      </div>
     </header>
+    <!-- Fin en tête de la page : Grasty Ghyvet SAMBA DINAULT -->
 
     <main class="container">
-        <nav class="breadcrumb" aria-label="fil d'Ariane">
-            <a href="index.html">Accueil</a>
-            <span class="sep" aria-hidden="true">/</span>
-            <span class="current" aria-current="page">Catalogue</span>
-        </nav>
+      <section class="breadcrumb" aria-label="fil d'Ariane">
+        <a href="index.html">Accueil</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <span class="current" aria-current="page">Catalogue</span>
+      </section>
 
-        <section aria-label="Catalogue des produits">
-            <h1 class="visually-hidden">Notre Catalogue</h1>
-            <div class="catalog-toolbar">
-                <button class="chip active">Tout</button>
-                <button class="chip">Céramique</button>
-                <button class="chip">Textile</button>
-                <button class="chip">Epicerie</button>
-                <button class="chip">Bois</button>
+      <section aria-label="Catalogue des produits">
+        <h1 class="visually-hidden">Notre Catalogue</h1>
+        <div class="catalog-toolbar">
+          <button class="chip active">Tout</button>
+          <button class="chip">Céramique</button>
+          <button class="chip">Textile</button>
+          <button class="chip">Epicerie</button>
+          <button class="chip">Bois</button>
+        </div>
+
+        <div class="catalog-grid">
+          <article class="card">
+            <img src="images/bol-ondine.jfif" alt="Bol Ondine" />
+            <div class="card-body">
+              <p class="cat">Céramique</p>
+              <h3>Bol Ondine</h3>
+              <p class="price-tag">42 €</p>
             </div>
+          </article>
 
-            <div class="catalog-grid">
-                <article class="card">
-                    <img src="images/bol-ondine.jfif" alt="Bol Ondine">
-                    <div class="card-body">
-                        <p class="cat">Céramique</p>
-                        <h3>Bol Ondine</h3>
-                        <p class="price-tag">42 €</p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <img src="images/plaid-merinos.jfif" alt="Plaid en pure laine">
-                    <div class="card-body">
-                        <p class="cat">Textile</p>
-                        <h3>Plaid en pure laine</h3>
-                        <p class="price-tag">78 €</p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <img src="images/miel-chataignier.png" alt="Miel de châtaignier">
-                    <div class="card-body">
-                        <p class="cat">Epicerie</p>
-                        <h3>Miel de châtaignier</h3>
-                        <p class="price-tag">9 €</p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <img src="images/planche-chene.jfif" alt="Planche en chêne">
-                    <div class="card-body">
-                        <p class="cat">Bois</p>
-                        <h3>Planche en chêne</h3>
-                        <p class="price-tag">34 €</p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <img src="images/vase-anse.jpg" alt="Vase ancien">
-                    <div class="card-body">
-                        <p class="cat">Céramique</p>
-                        <h3>Vase ancien</h3>
-                        <p class="price-tag">56 €</p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <img src="images/echarpe-lin.jfif" alt="Echarpe en lin">
-                    <div class="card-body">
-                        <p class="cat">Textile</p>
-                        <h3>Echarpe en lin</h3>
-                        <p class="price-tag">28 €</p>
-                    </div>
-                </article>
-
+          <article class="card">
+            <img src="images/plaid-merinos.jfif" alt="Plaid en pure laine" />
+            <div class="card-body">
+              <p class="cat">Textile</p>
+              <h3>Plaid en pure laine</h3>
+              <p class="price-tag">78 €</p>
             </div>
-        </section>
+          </article>
+
+          <article class="card">
+            <img src="images/miel-chataignier.png" alt="Miel de châtaignier" />
+            <div class="card-body">
+              <p class="cat">Epicerie</p>
+              <h3>Miel de châtaignier</h3>
+              <p class="price-tag">9 €</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="images/planche-chene.jfif" alt="Planche en chêne" />
+            <div class="card-body">
+              <p class="cat">Bois</p>
+              <h3>Planche en chêne</h3>
+              <p class="price-tag">34 €</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="images/vase-anse.jpg" alt="Vase ancien" />
+            <div class="card-body">
+              <p class="cat">Céramique</p>
+              <h3>Vase ancien</h3>
+              <p class="price-tag">56 €</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="images/echarpe-lin.jfif" alt="Echarpe en lin" />
+            <div class="card-body">
+              <p class="cat">Textile</p>
+              <h3>Echarpe en lin</h3>
+              <p class="price-tag">28 €</p>
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
-
-</body>
+  </body>
 </html>
