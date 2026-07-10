@@ -38,6 +38,21 @@ header a {
   font-family: var(--font-mono);
 }
 
+.header-actions {
+  display: flex;
+  gap: var(--fs-size-sm);
+}
+
+.action-btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-ink);
+  border-radius: 100px;
+}
+
 /*Footer*/
 footer {
   display: grid;
@@ -62,6 +77,14 @@ footer {
 
 .link-footer {
   color: #b7b1a0;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.bagde {
+  font-size: var(--fs-size-sm);
 }
 
 /*Tablette*/
